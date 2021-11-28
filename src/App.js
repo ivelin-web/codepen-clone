@@ -26,7 +26,7 @@ function App() {
             } else {
                 openPreview !== false && setOpenPreview(false);
             }
-        }, 250);
+        }, 750);
 
         return () => {
             clearTimeout(timeout);
