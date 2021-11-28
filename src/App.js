@@ -21,7 +21,7 @@ function App() {
                     </body
                 </html>`);
 
-            if (html) {
+            if (html || css || js) {
                 openPreview !== true && setOpenPreview(true);
             } else {
                 openPreview !== false && setOpenPreview(false);
