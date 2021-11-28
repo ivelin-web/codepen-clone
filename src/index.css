@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.pane {
+    height: 50vh;
+    display: flex;
+}
+
+.top-pane {
+    background: hsl(225, 6%, 25%);
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+}
+
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background: hsl(225, 6%, 25%);
+}
+
+.editor-title {
+    display: flex;
+    justify-content: space-between;
+    background: hsl(225, 6%, 13%);
+    color: #fff;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.CodeMirror {
+    height: 100% !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.code-mirror-wrapper {
+    flex-grow: 1;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.no-content-container {
+    color: rgba(255, 255, 255, 0.7);
+    background: hsl(225, 6%, 35%);
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-content-container h4 {
+    letter-spacing: 0.1px;
+    margin: 0;
+}
